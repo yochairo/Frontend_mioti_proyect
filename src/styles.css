@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.App {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.rating-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Asegura que el formulario ocupa todo el ancho disponible */
+    max-width: 500px; /* Ancho máximo del formulario */
+    margin: 20px; /* Margen alrededor del formulario */
+}
+
+.rating-form textarea {
+    width: 100%; /* Asegura que el textarea ocupa todo el ancho disponible */
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: both; /* Permite cambiar el tamaño tanto horizontal como vertical */
+}
+
+.rating-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px; /* Espacio entre el textarea y el botón */
+}
+
+.rating-form button:disabled {
+    background-color: #aaa;
+}
+
+.rating-form p {
+    margin-top: 10px;
+}
+
+.rating-form .error {
+    color: red;
+}
